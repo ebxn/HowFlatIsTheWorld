@@ -23,18 +23,18 @@
       const init = () => {
         camera = new THREE.PerspectiveCamera(
           45,
-          window.innerWidth / window.innerHeight,
+          1,
           0.01,
           1000
         )
-        camera.position.z = 2
+        camera.position.z = 1.4
 
         scene = new THREE.Scene()
 
         scene.add(new THREE.AmbientLight(0x333333))
 
-        const light = new THREE.DirectionalLight(0xffffff, 1)
-        light.position.set(5, 3, 5)
+        const light = new THREE.DirectionalLight(0xeeeeee, 1)
+        light.position.set(50, 30, 50)
         scene.add(light)
 
         const noClouds = require('@/assets/2_no_clouds_4k.jpg')
@@ -54,18 +54,13 @@
 
         scene.add(world)
 
-        renderer = new THREE.WebGLRenderer({ antialias: true })
+        renderer = new THREE.WebGLRenderer({
+          antialias: true,
+          alpha: true
+        })
+        renderer.setClearColor(0x000000, 0)
         renderer.setPixelRatio(window.devicePixelRatio)
-        renderer.setSize(window.innerWidth * 0.75, window.innerHeight * 0.75)
-
-        window.addEventListener('resize', onWindowResize, false)
-      }
-
-      const onWindowResize = () => {
-        camera.aspect = window.innerWidth / window.innerHeight
-        camera.updateProjectionMatrix()
-
-        renderer.setSize(window.innerWidth * 0.75, window.innerHeight * 0.75)
+        renderer.setSize(25 * 16, 25 * 16)
       }
 
       const animate = () => {
