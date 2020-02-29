@@ -16,10 +16,11 @@
       <ul class="text-red-100">
         <li class="inline-block mx-4">
           <a
-            class="cursor-pointer"
+            class="p-2 cursor-pointer"
             onClick="MyWindow=window.open('https://twitter.com/share?url=http://howflatisthe.world&amp;text=Is%20the%20world%20flat?&amp;hashtags=flatearth')"
           >
             <img
+              class="w-8 md:w-12 lg:w-auto h-8 md:h-12 lg:h-auto"
               src="@/assets/twitter.png"
               alt="The twitter logo"
             >
@@ -27,10 +28,11 @@
         </li>
         <li class="inline-block mx-4">
           <a
-            class="cursor-pointer"
+            class="p-2 cursor-pointer"
             onClick="MyWindow=window.open('http://www.facebook.com/sharer.php?u=http://howflatisthe.world')"
           >
             <img
+              class="w-8 md:w-12 lg:w-auto h-8 md:h-12 lg:h-auto"
               src="@/assets/facebook.png"
               alt="The facebook logo"
             >
@@ -38,10 +40,11 @@
         </li>
         <li class="inline-block mx-4">
           <a
-            class="cursor-pointer"
+            class="p-2 cursor-pointer"
             onClick="MyWindow=window.open('https://www.reddit.com/submit?url=https://howflatisthe.world&title=Flat%20Earth%20website')"
           >
             <img
+              class="w-8 md:w-12 lg:w-auto h-8 md:h-12 lg:h-auto"
               src="@/assets/reddit.png"
               alt="The Reddit logo"
             >

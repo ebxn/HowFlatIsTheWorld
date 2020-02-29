@@ -60,6 +60,7 @@
         })
         renderer.setClearColor(0x000000, 0)
         renderer.setPixelRatio(window.devicePixelRatio)
+
         if (window.innerWidth < 769) {
           renderer.setSize(15 * 16, 15 * 16)
         } else if (window.innerWidth < 1024) {
