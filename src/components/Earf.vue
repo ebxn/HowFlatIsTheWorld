@@ -33,8 +33,8 @@
 
         scene.add(new THREE.AmbientLight(0x333333))
 
-        const light = new THREE.DirectionalLight(0xeeeeee, 1)
-        light.position.set(50, 30, 50)
+        const light = new THREE.DirectionalLight(0xffffff, 1)
+        light.position.set(5, 3, 5)
         scene.add(light)
 
         const noClouds = require('@/assets/2_no_clouds_4k.jpg')
@@ -48,7 +48,7 @@
             bumpMap: new THREE.TextureLoader().load(bumpMap),
             bumpScale: 0.005,
             specularMap: new THREE.TextureLoader().load(specMap),
-            specular: new THREE.Color('grey')
+            specular: 0x222222
           })
         )
 

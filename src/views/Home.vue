@@ -16,6 +16,7 @@
       <ul class="text-red-100">
         <li class="inline-block mx-4">
           <a
+            class="cursor-pointer"
             onClick="MyWindow=window.open('https://twitter.com/share?url=http://howflatisthe.world&amp;text=Is%20the%20world%20flat?&amp;hashtags=flatearth')"
           >
             <img
@@ -26,7 +27,19 @@
         </li>
         <li class="inline-block mx-4">
           <a
+            class="cursor-pointer"
             onClick="MyWindow=window.open('http://www.facebook.com/sharer.php?u=http://howflatisthe.world')"
+          >
+            <img
+              src="@/assets/facebook.png"
+              alt="The facebook logo"
+            >
+          </a>
+        </li>
+        <li class="inline-block mx-4">
+          <a
+            class="cursor-pointer"
+            onClick="MyWindow=window.open('https://www.reddit.com/submit?url=https://howflatisthe.world&title=Flat%20Earth%20website)"
           >
             <img
               src="@/assets/facebook.png"
