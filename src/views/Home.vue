@@ -1,16 +1,16 @@
 <template>
   <div class="flex flex-col justify-around items-center h-full">
-    <div class="flex flex-col">
-      <h1 class="mt-10 text-4xl text-white font-bold">
+    <div class="my-3 md:my-5 lg:my-7 flex flex-col">
+      <h1 class="text-2xl md:text-3xl lg:text-4xl text-white font-bold">
         It's not.
       </h1>
-      <span class="animate inline-block bg-white w-32 h-1" />
+      <span class="animate inline-block bg-white w-22 lg:w-32 h-1" />
     </div>
 
     <earf />
 
-    <div class="mb-10 ">
-      <h2 class="mb-4 text-xl text-white text-center font-semibold">
+    <div class="my-3 md:my-5 lg:my-7">
+      <h2 class="mb-4 text-lg md:text-3xl lg:text-xl text-white text-center font-semibold">
         Tell a flat earther!
       </h2>
       <ul class="text-red-100">

@@ -62,9 +62,9 @@
         renderer.setPixelRatio(window.devicePixelRatio)
 
         if (window.innerWidth < 769) {
-          renderer.setSize(15 * 16, 15 * 16)
+          renderer.setSize(12.5 * 16, 12.5 * 16)
         } else if (window.innerWidth < 1024) {
-          renderer.setSize(20 * 16, 20 * 16)
+          renderer.setSize(18 * 16, 18 * 16)
         } else {
           renderer.setSize(25 * 16, 25 * 16)
         }
@@ -74,9 +74,9 @@
 
       const onWindowResize = () => {
         if (window.innerWidth < 769) {
-          renderer.setSize(15 * 16, 15 * 16)
+          renderer.setSize(12.5 * 16, 12.5 * 16)
         } else if (window.innerWidth < 1024) {
-          renderer.setSize(20 * 16, 20 * 16)
+          renderer.setSize(18 * 16, 18 * 16)
         } else {
           renderer.setSize(25 * 16, 25 * 16)
         }
