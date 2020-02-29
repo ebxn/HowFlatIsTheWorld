@@ -61,6 +61,18 @@
         renderer.setClearColor(0x000000, 0)
         renderer.setPixelRatio(window.devicePixelRatio)
         renderer.setSize(25 * 16, 25 * 16)
+
+        window.addEventListener('resize', onWindowResize, false)
+      }
+
+      const onWindowResize = () => {
+        if (window.innerWidth < 769) {
+          renderer.setSize(15 * 16, 15 * 16)
+        } else if (window.innerWidth < 1024) {
+          renderer.setSize(20 * 16, 20 * 16)
+        } else {
+          renderer.setSize(25 * 16, 25 * 16)
+        }
       }
 
       const animate = () => {
