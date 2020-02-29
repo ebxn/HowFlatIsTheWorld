@@ -39,11 +39,11 @@
         <li class="inline-block mx-4">
           <a
             class="cursor-pointer"
-            onClick="MyWindow=window.open('https://www.reddit.com/submit?url=https://howflatisthe.world&title=Flat%20Earth%20website)"
+            onClick="MyWindow=window.open('https://www.reddit.com/submit?url=https://howflatisthe.world&title=Flat%20Earth%20website')"
           >
             <img
-              src="@/assets/facebook.png"
-              alt="The facebook logo"
+              src="@/assets/reddit.png"
+              alt="The Reddit logo"
             >
           </a>
         </li>
