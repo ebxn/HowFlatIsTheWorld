@@ -21,12 +21,7 @@
       })
 
       const init = () => {
-        camera = new THREE.PerspectiveCamera(
-          45,
-          1,
-          0.01,
-          1000
-        )
+        camera = new THREE.PerspectiveCamera(45, 1, 0.01, 1000)
         camera.position.z = 1.4
 
         scene = new THREE.Scene()
@@ -61,30 +56,30 @@
         renderer.setClearColor(0x000000, 0)
         renderer.setPixelRatio(window.devicePixelRatio)
 
-        if (window.innerWidth < 769) {
+        if (window.innerWidth < 768) {
           renderer.setSize(12.5 * 16, 12.5 * 16)
-        } else if (window.innerWidth < 1024) {
+        } else if (window.innerWidth < 1023) {
           renderer.setSize(18 * 16, 18 * 16)
         } else {
-          renderer.setSize(25 * 16, 25 * 16)
+          renderer.setSize(21 * 16, 21 * 16)
         }
 
         window.addEventListener('resize', onWindowResize, false)
       }
 
       const onWindowResize = () => {
-        if (window.innerWidth < 769) {
-          renderer.setSize(12.5 * 16, 12.5 * 16)
-        } else if (window.innerWidth < 1024) {
+        if (window.innerWidth < 768) {
+          renderer.setSize(13 * 16, 13 * 16)
+        } else if (window.innerWidth < 1023) {
           renderer.setSize(18 * 16, 18 * 16)
         } else {
-          renderer.setSize(25 * 16, 25 * 16)
+          renderer.setSize(21 * 16, 21 * 16)
         }
       }
 
       const animate = () => {
         requestAnimationFrame(animate)
-        world.rotation.y += 0.01
+        world.rotation.y += 0.0035
         renderer.render(scene, camera)
       }
 
