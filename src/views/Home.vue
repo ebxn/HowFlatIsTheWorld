@@ -1,14 +1,14 @@
 <template>
   <div class="flex flex-col items-center h-full">
     <!-- it's not -->
-    <div class="mt-24">
+    <div class="mt-5 md:mt-24">
       <h1 class="animate-fade-in text-center text-2xl md:text-3xl lg:text-4xl text-white font-bold leading-tight">
         It's not.
       </h1>
       <span class="animate-fade-right block mx-auto bg-white w-20 md:w-26 lg:w-32 h-1" />
     </div>
 
-    <div class="md:fixed flex justify-center md:items-center my-24 md:my-0 w-full h-full">
+    <div class="md:fixed flex justify-center md:items-center my-10 md:my-0 w-full h-full">
       <!--  earth -->
       <earf />
 
@@ -93,7 +93,27 @@
           >
             <a
               class="cursor-pointer"
-              ahref="https://teespring.com/round-2020"
+              href="https://teespring.com/round-2020"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                class="rounded-lg w-64 h-64 md:w-12 md:h-12"
+                src="@/assets/shirt-round.jpg"
+                alt="A t-shirt design featuring the word ROUND with the O replaced by a globe."
+              >
+            </a>
+          </li>
+          <li
+            class="md:transition-opacity md:duration-150 flex justify-center md:inline-block md:opacity-75 md:hover:opacity-100 md:mx-2 mb-4 md:mb-0 w-full md:w-auto"
+            @mouseenter="updateCurrentHoveredShirt('shirt-evidence')"
+            @mouseleave="clearCurrentHoveredShirt()"
+          >
+            <a
+              class="cursor-pointer"
+              href="https://teespring.com/evidence-of-flat-earth"
+              target="_blank"
+              rel="noopener"
             >
               <img
                 class="rounded-lg w-64 h-64 md:w-12 md:h-12"
@@ -109,6 +129,9 @@
           >
             <a
               class="cursor-pointer"
+              href="https://teespring.com/round-2020"
+              target="_blank"
+              rel="noopener"
             >
               <img
                 class="rounded-lg w-64 h-64 md:w-12 md:h-12"
