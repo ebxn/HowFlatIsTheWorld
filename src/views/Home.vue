@@ -1,6 +1,5 @@
 <template>
   <div class="flex flex-col items-center h-full">
-    <!-- it's not -->
     <div class="mt-5 md:mt-24">
       <h1 class="animate-fade-in text-center text-2xl md:text-3xl lg:text-4xl text-white font-bold leading-tight">
         It's not.
@@ -9,10 +8,8 @@
     </div>
 
     <div class="md:fixed flex justify-center md:items-center my-10 md:my-0 w-full h-full">
-      <!--  earth -->
       <earf />
 
-      <!-- shirt preview -->
       <transition
         enter-active-class="transition-opacity duration-200"
         leave-active-class="transition-opacity duration-200"
@@ -38,8 +35,10 @@
         <ul class="flex justify-center">
           <li class="md:transition-opacity md:duration-150 inline-block md:opacity-75 md:hover:opacity-100">
             <a
-              onClick="MyWindow=window.open('https://twitter.com/share?url=http://howflatisthe.world&amp;text=Is%20the%20world%20flat?&amp;hashtags=flatearth')"
               class="cursor-pointer"
+              href="https://twitter.com/share?url=http://howflatisthe.world&amp;text=Is%20the%20world%20flat?&amp;hashtags=flatearth"
+              target="_blank"
+              rel="noopener"
             >
               <img
                 class="w-12 h-12"
@@ -50,8 +49,10 @@
           </li>
           <li class="md:transition-opacity md:duration-150 inline-block md:opacity-75 md:hover:opacity-100 mx-4">
             <a
-              onClick="MyWindow=window.open('http://www.facebook.com/sharer.php?u=http://howflatisthe.world')"
               class="cursor-pointer"
+              href="http://www.facebook.com/sharer.php?u=http://howflatisthe.world"
+              target="_blank"
+              rel="noopener"
             >
               <img
                 class="w-12 h-12"
@@ -62,8 +63,10 @@
           </li>
           <li class="md:transition-opacity md:duration-150 inline-block md:opacity-75 md:hover:opacity-100">
             <a
-              onClick="MyWindow=window.open('https://www.reddit.com/submit?url=https://howflatisthe.world&title=Flat%20Earth%20website')"
               class="cursor-pointer"
+              href="https://www.reddit.com/submit?url=https://howflatisthe.world&title=Flat%20Earth%20website"
+              target="_blank"
+              rel="noopener"
             >
               <img
                 class="w-12 h-12"
@@ -117,8 +120,8 @@
             >
               <img
                 class="rounded-lg w-64 h-64 md:w-12 md:h-12"
-                src="@/assets/shirt-round.jpg"
-                alt="A t-shirt design featuring the word ROUND with the O replaced by a globe."
+                src="@/assets/shirt-evidence.jpg"
+                alt="A t-shirt design featuring the title Evidence of a flat earth and a list containing one blank element."
               >
             </a>
           </li>
