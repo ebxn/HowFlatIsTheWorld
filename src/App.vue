@@ -1,20 +1,20 @@
 <template>
   <div id="app">
     <default-layout>
-      <router-view :key="$route.fullPath" />
+      <Home />
     </default-layout>
   </div>
 </template>
 
 <script>
   import DefaultLayout from '@/layouts/Default.vue'
+  import Home from '@/views/Home.vue'
 
   export default {
     name: 'App',
     components: {
-      DefaultLayout
-    },
-    setup (props, ctx) {
+      DefaultLayout,
+      Home
     }
   }
 </script>

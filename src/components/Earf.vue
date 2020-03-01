@@ -10,7 +10,7 @@
 
   export default {
     name: 'Earf',
-    setup (props, ctx) {
+    setup (_, ctx) {
       let camera, scene, renderer
       let world
 

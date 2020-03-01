@@ -21,13 +21,12 @@
         required: true
       }
     },
-    setup (props, ctx) {
+    setup (props) {
       const shirtSrc = computed(() => {
-        console.log(`@/assets/${props.shirt}.jpg`)
         return require(`@/assets/${props.shirt}.jpg`)
       })
       return {
-        shirtSrc: shirtSrc
+        shirtSrc
       }
     }
   }

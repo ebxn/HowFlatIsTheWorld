@@ -160,7 +160,7 @@
       Earf,
       ShirtPreview
     },
-    setup (props, ctx) {
+    setup () {
       const shirt = ref('')
 
       const updateCurrentHoveredShirt = (name) => {
