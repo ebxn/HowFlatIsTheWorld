@@ -132,7 +132,7 @@
           >
             <a
               class="cursor-pointer"
-              href="https://teespring.com/round-2020"
+              href="https://teespring.com/new-curvy-and-proud"
               target="_blank"
               rel="noopener"
             >
