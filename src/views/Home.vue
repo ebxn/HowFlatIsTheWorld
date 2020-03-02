@@ -227,7 +227,7 @@
   }
 
   .animate-fade-up {
-    animation: fadeUp 850ms cubic-bezier(.29,0,.38,1) 2150ms 1 backwards;
+    animation: fadeUp 850ms cubic-bezier(.29,0,.38,1) 2500ms 1 backwards;
     transform-origin: left;
   }
 </style>
